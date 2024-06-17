@@ -1,0 +1,12 @@
+<%- include('partials/header') %>
+  <div class="jumbotron text-center">
+    <div class="container">
+      <i class="fa-solid fa-question fa-6x"></i>
+      <h3 class="display-3">You have successfully completed!</h3>
+      <hr>
+      <h3  style="color:green;" >Your got <%= score %> marks out of <%= maximum %> marks</b></h3><br>
+      <h3  style="color:blue;"  >Percentage : <%= score/maximum * 100 %>%</b></h3><br>
+      <a class="btn btn-dark btn-lg" href="/" role="button">Home Page</a>
+    </div>
+  </div>
+  <%- include('partials/footer') %>

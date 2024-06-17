@@ -1,0 +1,35 @@
+<%- include('partials/header') %>
+  <div class="container mt-5">
+    <h1><%= heading %></h1>
+    <div class="row">
+      <div class="col-sm-8">
+        <div class="card">
+          <div class="card-body">
+              <!-- Makes POST request to /register route -->
+            <form action="/update" method="POST">
+              <div class="form-group">
+                <label for="question">Question No : <%= qno %></label>
+                <input type="text" class="form-control" name="question" required>
+              <!-- </div>
+              <div class="form-group"> -->
+                <label for="option1">Option - 1</label>
+                <input type="text" class="form-control" name="option1" required>
+                <label for="option2">Option - 2</label>
+                <input type="text" class="form-control" name="option2" required>
+                <label for="option3">Option - 3</label>
+                <input type="text" class="form-control" name="option3" required>
+                <label for="option4">Option - 4</label>
+                <input type="text" class="form-control" name="option4" required>
+                <label for="answer">Answer</label>
+                <input type="text" placeholder="only mention option number" pattern="[1-4]" class="form-control" name="answer" required>
+              </div>
+              <button type="submit" class="btn btn-dark">Next</button>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <%- include('partials/header') %>
